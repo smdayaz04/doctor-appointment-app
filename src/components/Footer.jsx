@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>Chennai Highway, Rajampet Road, Nandalur</p>
+          <p>Kadapa,Andhra pradeh</p>
           <p>Email: <a href="mailto:smdayaz04@gmail.com">smdayaz04@gmail.com</a></p>
           <p>Phone: +91 9491937949</p>
         </div>
