@@ -1,0 +1,56 @@
+/* src/index.css */
+
+/* Import a nice font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Define our color palette and font as CSS variables */
+:root {
+  --primary-color: #00aaff; /* A brighter blue for dark backgrounds */
+  --primary-dark: #0088cc;
+  --secondary-color: #a7b4c2; /* Light gray for secondary text */
+  --light-color: #f8f9fa; /* We'll keep this for card backgrounds */
+  --dark-color: #121212; /* Main background color */
+  --card-bg-color: #1e1e1e; /* Background for cards/navbar */
+  --text-color: #e0e0e0; /* Main text color */
+  --white-color: #ffffff;
+  --font-family: 'Poppins', sans-serif;
+}
+/* A common reset to make styling more predictable */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global body styles */
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: var(--dark-color); /* Use dark background */
+  color: var(--text-color); /* Use light text */
+}
+/* A container class we will use to center content */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/* A general button style we can reuse */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+}

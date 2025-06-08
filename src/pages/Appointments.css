@@ -1,0 +1,56 @@
+/* src/pages/Appointments.css */
+.appointments-page {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.appointments-page h1 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.appointments-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.appointment-card {
+    background: var(--card-bg-color);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-left: 5px solid var(--primary-color);
+    transition: transform 0.2s ease-in-out;
+}
+
+.appointment-card:hover {
+    transform: scale(1.02);
+}
+
+.appointment-card h3 {
+    margin-bottom: 1rem;
+    color: var(--white-color);
+}
+
+.appointment-card p {
+    margin: 0.5rem 0;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.appointment-card p strong {
+    color: var(--text-color);
+}
+
+.no-appointments {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.no-appointments p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,63 @@
+/* src/pages/Home.css */
+.hero-section {
+  background: var(--dark-color); /* Match the body for a seamless look */
+  padding: 4rem 0;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+.hero-image img {
+  max-width: 450px;
+  /* Fun floating animation */
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Keyframe animation for the floating effect */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.doctors-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.doctors-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--white-color);
+}
+
+.doctors-grid {
+  display: grid;
+  /* This makes the grid responsive */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
